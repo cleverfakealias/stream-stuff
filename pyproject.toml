@@ -1,0 +1,27 @@
+[project]
+name = "agentic-rag"
+version = "0.1.0"
+description = "Agentic AI system with RAG using Chroma DB and web scraping"
+authors = [{name = "Example", email = "example@example.com"}]
+requires-python = ">=3.11"
+readme = "README.md"
+
+[project.optional-dependencies]
+full = [
+    "chromadb>=0.4",
+    "langchain>=0.1",
+    "sentence-transformers>=2",
+    "torch",
+    "transformers",
+    "beautifulsoup4",
+    "playwright",
+    "requests",
+    "pytest",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = "-q"
